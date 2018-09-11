@@ -1,0 +1,17 @@
+<p>
+  This is currently invite only. Hang tight while we open up registration.
+</p>
+
+<mat-list>
+  <h3 mat-subheader
+      title="While we implement login">
+    Choose your identity
+  </h3>
+  <mat-list-item *ngFor="let user of users">
+    <button mat-button
+            mat-line
+            (click)="login(user)">
+      {{user.givenName}} {{user.familyName}}
+    </button>
+  </mat-list-item>
+</mat-list>

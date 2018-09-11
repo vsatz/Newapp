@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>New Post</h1>
+<form mat-dialog-content>
+  <!-- Hidden button to capture carriage return as form submit. -->
+  <button [style.display]="'none'"
+          (click)="commit()"></button>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <textarea matInput
+              cdkTextareaAutosize
+              #autosize="cdkTextareaAutosize"
+              cdkAutosizeMinRows="2"
+              cdkAutosizeMinRows="7"
+              cdkFocusInitial
+              [(ngModel)]="post.content"
+              placeholder="What did you do interesting today?" 
+              name="content"></textarea>
+  </mat-form-field>
+    <div mat-dialog-actions>
+    <button mat-button
+            (click)="discard()">
+      Discard
+    </button> 
+    <button mat-flat-button
+            [mat-dialog-close]="post"
+            [disabled]="!post.content.trim()">
+      Post
+    </button> 
+  </div>
+</form>

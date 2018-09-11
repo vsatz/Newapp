@@ -1,0 +1,18 @@
+<form>
+  <!-- Hidden button to capture carriage return as form submit. -->
+  <button [style.display]="'none'"
+          (click)="commit()"></button>
+  <mat-form-field>
+    <mat-label>Write a comment...</mat-label>
+    <textarea matInput
+              cdkTextareaAutosize
+              #autosize="cdkTextareaAutosize"
+              cdkAutosizeMinRows="1"
+              [(ngModel)]="comment"
+              name="comment"></textarea>
+  </mat-form-field>
+  <button mat-icon-button
+          (click)="commit()">
+    <mat-icon>send</mat-icon>
+  </button> 
+</form>

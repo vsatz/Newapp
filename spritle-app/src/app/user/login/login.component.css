@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  width: 700px;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+form {
+  display: grid;
+  padding: 10px 10px 0 10px;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+}

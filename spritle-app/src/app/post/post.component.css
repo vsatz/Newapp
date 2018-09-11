@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  border: 2px solid #eeeeee;
+  border-radius: 8px;
+}
+
+.mat-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 20px;
+}
+
+mat-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+spritle-comment-form {
+  box-shadow: 0 -1px 4px 0 rgba(0,0,0,0.1);
+}

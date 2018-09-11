@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+
+spritle-post {
+  margin: auto auto 12px auto;
+  max-width: 700px;
+}
+
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

@@ -1,0 +1,12 @@
+<mat-toolbar color="primary"
+             title="Interesting things people do.">
+  <mat-toolbar-row>
+  <span>Comments</span>
+  <button mat-icon-button
+          *ngIf="isLoggedIn"
+          (click)="logout()">
+    <mat-icon>power_settings_new</mat-icon>
+  </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
